@@ -1,0 +1,80 @@
+{
+    "info": {
+        "name": "Backend Assignment APIs",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Google OAuth - Start",
+            "request": {
+                "method": "GET",
+                "url": "{{baseUrl}}/api/auth/start/"
+            }
+        },
+        {
+            "name": "Google OAuth - Callback",
+            "request": {
+                "method": "GET",
+                "url": "{{baseUrl}}/api/auth/callback/"
+            }
+        },
+        {
+            "name": "Google Drive - Connect",
+            "request": {
+                "method": "GET",
+                "url": "{{baseUrl}}/api/drive/connect/"
+            }
+        },
+        {
+            "name": "Google Drive - Callback",
+            "request": {
+                "method": "GET",
+                "url": "{{baseUrl}}/api/drive/callback/"
+            }
+        },
+        {
+            "name": "Google Drive - List Files",
+            "request": {
+                "method": "GET",
+                "url": "{{baseUrl}}/api/drive/files/"
+            }
+        },
+        {
+            "name": "Google Drive - Upload File",
+            "request": {
+                "method": "POST",
+                "url": "{{baseUrl}}/api/drive/upload/",
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [
+                        {
+                            "key": "file",
+                            "type": "file",
+                            "src": ""
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Google Drive - Download File",
+            "request": {
+                "method": "GET",
+                "url": "{{baseUrl}}/api/drive/download/:file_id/"
+            }
+        },
+        {
+            "name": "WebSocket Chat",
+            "request": {
+                "method": "GET",
+                "url": "ws://localhost:8000/ws/chat/"
+            }
+        }
+    ],
+    "variable": [
+        {
+            "key": "baseUrl",
+            "value": "http://localhost:8000"
+        }
+    ]
+}
