@@ -3,8 +3,8 @@ import requests
 from django.http import JsonResponse, HttpResponseRedirect
 
 # Replace with your actual credentials from Google Cloud Console
-GOOGLE_CLIENT_ID = "808778216240-j1g5tes4ooj768v2o51lo7vl293398o3.apps.googleusercontent.com"
-GOOGLE_CLIENT_SECRET = "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"
+GOOGLE_CLIENT_ID = "your-google-client-id"
+GOOGLE_CLIENT_SECRET = "your-google-client-secret"
 REDIRECT_URI = "http://localhost:8000/api/auth/callback/"
 
 GOOGLE_AUTH_URL = "https://accounts.google.com/o/oauth2/v2/auth"
