@@ -91,8 +91,3 @@ CHANNEL_LAYERS = {
         },
     },
 }
-
-
-TWILIO_ACCOUNT_SID = "ACe3f8843ebaa88d4851a8f119bd0b0226"
-TWILIO_AUTH_TOKEN = "a5466b18ad35dde9b0962dc21b64e8c6"
-TWILIO_WHATSAPP_NUMBER = "whatsapp:+14155238886"  # Twilio sandbox number
